@@ -136,11 +136,54 @@ body {
     flex-wrap: wrap;
 }
 
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .main-input-wrapper {
-        display: flex;
+    .main {
         flex-direction: column;
-        align-items: center;
+        margin: 1em;
     }
 
+    .navbar {
+        flex-basis: auto;
+        width: 100%;
+        order: -1;
+    }
+
+    .main-wrapper {
+        flex-basis: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 31.25rem) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .num-input {
+        width: 40px;
+    }
+
+    .calculate-btn {
+        font-size: 1.1rem;
+    }
+
+    .main-wrapper {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .num-input, 
+    .matrix-entry {
+        width: 30px;
+    }
+
+    .calculate-btn {
+        width: 100%; /* Membuat tombol mengisi lebar kontainer */
+    }
 }
