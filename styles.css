@@ -184,6 +184,6 @@ body {
     }
 
     .calculate-btn {
-        width: 100%; /* Membuat tombol mengisi lebar kontainer */
+        width: 100%;
     }
 }
